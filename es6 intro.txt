@@ -58,3 +58,13 @@ copy mode code in webpack.config.js and paste this code after mode: 'development
 delete exclude line this line.
 and then again npm run build==>
 n.b: each delete dist folder.
+
+
+
+
+
+
+
+
+
+sfjijfiofjerifji
