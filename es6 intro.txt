@@ -1,0 +1,60 @@
+
+es6 intro:
+make es6 folder with your desktop:
+then go to cmder==>
+cd ..==> change directory
+go to desktop..
+cd es6 == go to es6 folder
+
+npm init -y==> package.json file make
+npm i -D webpack webpack-cli ==> webpack download 
+create index.htmlin es6
+create a folder with the name "src" and go to folder and then create another folder "scripts" and create a file "index.js"
+create a file "webpack.config.js" in es6 folder
+and write this code webpack.config.js
+const path = require('path')
+
+module.exports={
+	entry:'/src/scripts/index.js',
+	output:{
+		
+		filename:'bundle.js',
+		path:path.resolve(__dirname,'dist')
+	},
+	mode: 'development',
+}
+
+write this code "index.js"
+
+const a = 10;
+const b = 20;
+const c = a + b;
+console.log(c);
+go to package.json file write code "webpack" in test area "build"
+{
+  "name": "es6",
+ 
+ "version": "1.0.0",
+ 
+ "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+ 
+ "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
+
+npm run build ==> to see file
+npm install -D babel-loader @babel/core @babel/preset-env webpack ==> for babel load
+go to https://webpack.js.org/loaders/babel-loader/ 
+copy mode code in webpack.config.js and paste this code after mode: 'development',
+delete exclude line this line.
+and then again npm run build==>
+n.b: each delete dist folder.
